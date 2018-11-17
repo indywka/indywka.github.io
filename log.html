@@ -1,0 +1,171 @@
+<pre>
+<font color="#4CE64C"><b>edwardik@ubuntu</b></font>:<font color="#295FCC"><b>~/ostis/scripts</b></font>$ sudo ./prepare.sh
+<font color="#44AA44">[1] </font><font color="#295FCC"><b>Clone projects...</b></font>
+You can update <font color="#44AA44">sc-machine</font> manualy
+You can update <font color="#44AA44">sc-web</font> manualy
+You can update <font color="#44AA44">ims.ostis.kb</font> manualy
+<font color="#44AA44">[2] </font><font color="#295FCC"><b>Prepare projects...</b></font>
+<font color="#44AA44">sc-machine</font>
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+cmake is already the newest version (3.10.2-1ubuntu2).
+libboost-filesystem-dev is already the newest version (1.65.1.0ubuntu1).
+libboost-program-options-dev is already the newest version (1.65.1.0ubuntu1).
+libboost-system-dev is already the newest version (1.65.1.0ubuntu1).
+make is already the newest version (4.1-9.1ubuntu1).
+qtbase5-dev is already the newest version (5.9.5+dfsg-0ubuntu1).
+antlr is already the newest version (2.7.7+dfsg-9.2).
+antlr3 is already the newest version (3.5.2-9).
+libantlr3c-dev is already the newest version (3.2-3).
+libboost-regex-dev is already the newest version (1.65.1.0ubuntu1).
+libhiredis-dev is already the newest version (0.13.3-2.2).
+libqt4-dev is already the newest version (4:4.8.7+dfsg-7ubuntu1).
+qt4-qmake is already the newest version (4:4.8.7+dfsg-7ubuntu1).
+g++ is already the newest version (4:7.3.0-3ubuntu2.1).
+gcc is already the newest version (4:7.3.0-3ubuntu2.1).
+libcurl4-openssl-dev is already the newest version (7.58.0-2ubuntu3.5).
+libglib2.0-dev is already the newest version (2.56.3-0ubuntu0.18.04.1).
+libclang-dev is already the newest version (1:6.0-41~exp5~ubuntu1).
+llvm is already the newest version (1:6.0-41~exp5~ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+redis-server is already the newest version (5:4.0.9-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+<span style="background-color:#AAAAAA"><font color="#FF8787"><b>Clean sc-machine</b></font></span>
+make: *** No rule to make target &apos;clean&apos;.  Stop.
+<span style="background-color:#AAAAAA"><font color="#FF8787"><b>Clean KPM modules</b></font></span>
+make: *** No rule to make target &apos;clean&apos;.  Stop.
+<span style="background-color:#AAAAAA"><font color="#FF8787"><b>Clean sctp server</b></font></span>
+./clean_all.sh: line 13: cd: ../sc-network/cpp: No such file or directory
+make: *** No rule to make target &apos;clean&apos;.  Stop.
+<span style="background-color:#AAAAAA"><font color="#FF8787"><b>Clean builder</b></font></span>
+./clean_all.sh: line 18: cd: ../../tools/builder: No such file or directory
+make: *** No rule to make target &apos;clean&apos;.  Stop.
+./clean_all.sh: line 20: /home/edwardik: Is a directory
+<span style="background-color:#AAAAAA"><font color="#FF8787"><b>Build sc-machine</b></font></span>
+mkdir: cannot create directory ‘build’: File exists
+-- Could NOT find Java (missing: Java_JAR_EXECUTABLE Java_JAVAC_EXECUTABLE Java_JAVADOC_EXECUTABLE) (found version &quot;10.0.2&quot;)
+-- Checking for module &apos;libhiredis&apos;
+--   No package &apos;libhiredis&apos; found
+CMake Error at /usr/share/cmake-3.10/Modules/FindPkgConfig.cmake:415 (message):
+  A required package was not found
+Call Stack (most recent call first):
+  /usr/share/cmake-3.10/Modules/FindPkgConfig.cmake:593 (_pkg_check_modules_internal)
+  CMakeLists.txt:59 (pkg_check_modules)
+
+
+-- Configuring incomplete, errors occurred!
+See also &quot;/home/edwardik/ostis/sc-machine/build/CMakeFiles/CMakeOutput.log&quot;.
+make: *** No targets specified and no makefile found.  Stop.
+/home/edwardik/ostis/scripts
+<font color="#44AA44">sc-web</font>
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python-dev is already the newest version (2.7.15~rc1-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python-pip is already the newest version (9.0.1-2.3~ubuntu1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+<font color="#AA5500">The directory &apos;/home/edwardik/.cache/pip/http&apos; or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&apos;s -H flag.</font>
+<font color="#AA5500">The directory &apos;/home/edwardik/.cache/pip&apos; or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&apos;s -H flag.</font>
+Requirement already satisfied: tornado in /usr/local/lib/python2.7/dist-packages
+Requirement already satisfied: sqlalchemy in /usr/local/lib/python2.7/dist-packages
+Requirement already satisfied: redis==2.9 in /usr/local/lib/python2.7/dist-packages
+Requirement already satisfied: numpy in /usr/local/lib/python2.7/dist-packages
+Requirement already satisfied: configparser in /usr/local/lib/python2.7/dist-packages
+Requirement already satisfied: backports_abc&gt;=0.4 in /usr/local/lib/python2.7/dist-packages (from tornado)
+Requirement already satisfied: futures in /usr/local/lib/python2.7/dist-packages (from tornado)
+Requirement already satisfied: singledispatch in /usr/local/lib/python2.7/dist-packages (from tornado)
+Requirement already satisfied: six in /usr/lib/python2.7/dist-packages (from singledispatch-&gt;tornado)
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+nodejs is already the newest version (8.10.0~dfsg-2ubuntu0.4).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ npm : Depends: node-gyp (&gt;= 0.10.9) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+<span style="background-color:#000000"><font color="#AAAAAA">npm</font></span> <span style="background-color:#AA5500"><font color="#000000">WARN</font></span> <font color="#AA22AA">using --force</font> I sure hope you know what you are doing.
+/usr/local/bin/n -&gt; /usr/local/lib/node_modules/n/bin/n
++ n@2.1.12
+updated 1 package in 0.414s
+Installing grunt
+/usr/local/bin/grunt -&gt; /usr/local/lib/node_modules/grunt-cli/bin/grunt
++ grunt-cli@1.3.2
+updated 1 package in 3.543s
+/home/edwardik/ostis/scripts
+<span style="background-color:#000000"><font color="#AAAAAA">npm</font></span> <span style="background-color:#AA5500"><font color="#000000">WARN</font></span> sc-web@1.0.0 No repository field.
+<span style="background-color:#000000"><font color="#AAAAAA">npm</font></span> <span style="background-color:#AA5500"><font color="#000000">WARN</font></span> sc-web@1.0.0 No license field.
+
+audited 243 packages in 2.078s
+found <font color="#4CE64C">0</font> vulnerabilities
+
+<u style="text-decoration-style:single">Running &quot;concat:webcore&quot; (concat) task</u>
+
+<u style="text-decoration-style:single">Running &quot;concat:github&quot; (concat) task</u>
+
+<u style="text-decoration-style:single">Running &quot;concat:html&quot; (concat) task</u>
+
+<u style="text-decoration-style:single">Running &quot;concat:scg&quot; (concat) task</u>
+
+<u style="text-decoration-style:single">Running &quot;concat:scs&quot; (concat) task</u>
+
+<u style="text-decoration-style:single">Running &quot;copy:githubJs&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:htmlJs&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:scgJs&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:scsJs&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:githubCss&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:htmlCss&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:scgCss&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:scsCss&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:scgHtml&quot; (copy) task</u>
+Copied <font color="#1A92AA">3</font> files
+
+<u style="text-decoration-style:single">Running &quot;copy:htmlImg&quot; (copy) task</u>
+Copied <font color="#1A92AA">1</font> file
+
+<u style="text-decoration-style:single">Running &quot;copy:scgImg&quot; (copy) task</u>
+Copied <font color="#1A92AA">18</font> files
+
+<u style="text-decoration-style:single">Running &quot;copy:scgImgAlphabet&quot; (copy) task</u>
+Copied <font color="#1A92AA">36</font> files
+
+<font color="#44AA44">Done.</font>
+/home/edwardik/ostis/scripts
+<font color="#44AA44">Copy server.conf</font>
+<font color="#44AA44">[3] </font><font color="#295FCC"><b>Build knowledge base...</b></font>
+/home/edwardik/ostis/scripts
+./build_kb.sh: line 11: sc-machine/bin/sc-builder: No such file or directory
+<font color="#4CE64C"><b>edwardik@ubuntu</b></font>:<font color="#295FCC"><b>~/ostis/scripts</b></font>$ 
+</pre>
